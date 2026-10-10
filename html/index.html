@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rent A Car</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div id="app" class="hidden">
+<div class="background"></div>
+<main class="window">
+<header><div><div class="eyebrow">CITY TRANSPORT</div><h1>Rent <span>A Car</span></h1><p>Choose a category and vehicle.</p></div><button id="close" class="close" type="button">×</button></header>
+<section class="categories">
+<button class="category active" data-category="cars" type="button"><b><i class="fa-solid fa-car-side"></i></b><div><strong>Cars</strong><small>City, sports and off-road vehicles</small></div></button>
+<button class="category" data-category="motorcycles" type="button"><b><i class="fa-solid fa-motorcycle"></i></b><div><strong>Motorcycles</strong><small>Motorcycles & scooters</small></div></button>
+</section>
+<section class="toolbar"><div><h2 id="categoryTitle">Cars</h2><span id="count">0 vehicles</span></div><div class="rental-info"><i class="fa-solid fa-clock"></i><span>Rental is valid until the next server restart</span></div></section>
+<section id="vehicleList" class="vehicle-list"></section>
+</main>
+<div id="confirm" class="modal hidden"><div class="modal-card"><div class="modal-icon"><i class="fa-solid fa-car"></i></div><h3 id="confirmTitle">Rent vehicle?</h3><p id="confirmDescription"></p><div class="summary"><div><span id="rentalPriceLabel">Rental price</span><strong id="confirmPrice">$0</strong></div></div><div class="payment-title">PAYMENT METHOD</div><div class="payment-list">
+<button class="payment active" data-payment="cash" type="button"><span><i class="fa-solid fa-money-bill-wave"></i></span><div><strong>Cash</strong><small>Cash payment</small></div></button>
+<button class="payment" data-payment="card" type="button"><span><i class="fa-solid fa-credit-card"></i></span><div><strong>Card</strong><small>Bank account</small></div></button>
+</div><div class="modal-actions"><button id="cancel" class="secondary" type="button">Cancel</button><button id="confirmRent" class="primary" type="button">Rent</button></div></div></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
