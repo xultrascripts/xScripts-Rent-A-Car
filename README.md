@@ -5,7 +5,7 @@
 - Designed for FiveM roleplay servers
 - Configurable Settings: All settings can be customized in files.
 
-
+ 
 ## ⚙️ Requirements
 
 - ox_lib
